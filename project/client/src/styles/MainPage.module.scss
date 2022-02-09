@@ -1,0 +1,17 @@
+@import "variables.module";
+.mainPage {
+    width: 100%;
+}
+.topArtists {
+    height: 310px;
+    width: 950px;
+    background: #cecece;
+    margin-top: 30px;
+}
+.tracksAndGenres{
+    min-height: 300px;
+    height: 400px;
+    margin-top: 15px;
+    width: 950px;
+    justify-content: space-between;
+}
