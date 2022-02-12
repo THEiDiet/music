@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <div className={c.gridContainer}>
             <div className={`${c.gridH} ${s.header}`}>
-
+                hi
             </div>
             <div className={c.gridC}>
                 <Outlet/>
