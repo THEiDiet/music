@@ -1,5 +1,15 @@
-.genres {
+.playlist {
     width: 220px;
     height: 400px;
     background: #adadad;
+    padding: 15px 20px;
+    &__header{
+        padding-bottom: 10px;
+    }
+    &__item{
+        padding: 15px 0;
+        &:last-child{
+            padding-bottom: 0;
+        }
+    }
 }

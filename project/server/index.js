@@ -10,7 +10,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 app.use('/api',router)
-app.use('/',(req,res)=>{
-    res.json({hello:'it\'s working'})
-})
+// app.use('/',(req,res)=>{
+//     res.json({hello:'it\'s working'})
+// })
 app.listen(PORT, ()=>console.log('server started on port - '+PORT))

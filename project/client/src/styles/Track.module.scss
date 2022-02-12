@@ -1,0 +1,23 @@
+.songContainer{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    min-width: 300px;
+    padding: 10px 15px;
+}
+.avatar{
+
+}
+.song{
+    display: flex;
+    &__info{
+        display: flex;
+        flex-direction: column;
+    }
+    &__time{
+
+    }
+}
+.like{
+
+}

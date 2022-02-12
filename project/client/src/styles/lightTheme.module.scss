@@ -1,0 +1,36 @@
+@import "variables.module";
+//--------fonts colors-------------
+
+h1,h2,h3,h4,h5,h6{
+
+    font-weight: 500;
+}
+.fontColor{
+    color: $l-fontColor;
+}
+.fontColorLight{
+    color: $l-fontColorLight;
+}
+//---------bg colors-----------------
+.bgColor{
+    color: $l-fontColor;
+    background: $l-bgColor;
+}
+.bgElemColor{
+    background: $l-bgElemsColor;
+}
+.activeBg{
+    background: $l-activeColor;
+}
+.activeFill{
+    fill: $l-activeColor;
+}
+.inactiveBg{
+    background: $l-inactiveColor;
+}
+.inactiveFill{
+    fill: $l-inactiveColor;
+}
+.activeStroke{
+    border-color: $l-activeColor;
+}

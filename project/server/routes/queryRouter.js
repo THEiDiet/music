@@ -5,7 +5,7 @@ const router = express.Router()
 router.get('/track',queryController.getTracks)
 // router.get('/track',(req,res)=>console.log(req.query))
 
-router.get('/artist',queryController.getArtists)
+router.get('/artist',queryController.getArtist)
 router.get('/album',)
 
 export default router

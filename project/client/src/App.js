@@ -12,7 +12,7 @@ function App() {
             <Routes>
                 <Route path={'/'} element={<Header/>}>
                     <Route index element={<MainPage/>}/>
-                    <Route index element={<SearchResults/>}/>
+                    <Route path='/search' element={<SearchResults/>}/>
                 </Route>
             </Routes>
         </BrowserRouter>
