@@ -1,0 +1,22 @@
+@import "variables.module";
+.playlist {
+    width: 250px;
+    box-shadow: $shadow;
+    &__list{
+        padding: 0 15px 15px 15px;
+    }
+    &__header{
+        padding-bottom: 10px;
+    }
+    &__item{
+        padding: 15px 0;
+        display: flex;
+        align-items: center;
+        &>span{
+            margin-right: 10px;
+        }
+        &:last-child{
+            padding-bottom: 0;
+        }
+    }
+}

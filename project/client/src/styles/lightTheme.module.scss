@@ -1,36 +1,49 @@
 @import "variables.module";
 //--------fonts colors-------------
 
-h1,h2,h3,h4,h5,h6{
+h1, h2, h3, h4, h5, h6 {
 
     font-weight: 500;
 }
-.fontColor{
+
+.fontColor {
     color: $l-fontColor;
 }
-.fontColorLight{
+
+.fontColorLight {
     color: $l-fontColorLight;
 }
+
 //---------bg colors-----------------
-.bgColor{
+.bgColor {
     color: $l-fontColor;
     background: $l-bgColor;
 }
-.bgElemColor{
+
+.bgElemColor {
     background: $l-bgElemsColor;
 }
-.activeBg{
+
+.activeBg {
     background: $l-activeColor;
 }
-.activeFill{
+
+.activeFill {
     fill: $l-activeColor;
 }
-.inactiveBg{
+
+.inactiveBg {
     background: $l-inactiveColor;
 }
-.inactiveFill{
+
+.inactiveFill {
     fill: $l-inactiveColor;
 }
-.activeStroke{
-    border-color: $l-activeColor;
+
+.activeStroke {
+    border-color: $l-activeColor !important;
+}
+
+.activeOutline {
+    outline-color: $l-activeColor !important;
 }
