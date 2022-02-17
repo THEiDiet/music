@@ -1,5 +1,5 @@
 import {createAsyncThunk, createSlice} from '@reduxjs/toolkit'
-import {searchArtist} from "../api/serverApi";
+import {searchArtist, searchArtistTracks} from "../api/serverApi";
 
 export const fetchArtist = createAsyncThunk(
     'search/fetchArtist',
@@ -9,8 +9,16 @@ export const fetchArtist = createAsyncThunk(
     }
 )
 
+export const fetchArtistTracks = createAsyncThunk(
+    'search/fetchArtistTracks',
+    async (url,thunkAPI) =>{
+        return searchArtistTracks(url).then(res=>res.json())
+    }
+)
+
 const initialState = {
-    artists:[]
+    artists:[],
+    tracks:[]
 }
 const searchSlice = createSlice({
     name: 'search',
@@ -29,6 +37,10 @@ const searchSlice = createSlice({
             // Add artists to the state array
             state.artists.push(action.payload)
         })
+        builder.addCase(fetchArtistTracks.fulfilled,(state,action)=>{
+            state.tracks.push(...action.payload.data)
+        })
+
     },
 })
 
